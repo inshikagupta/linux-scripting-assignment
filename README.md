@@ -98,6 +98,7 @@ I did all three bonus parts:
 `0 * * * *` means "at minute 0 of every hour". I added `cd` first because cron starts in the home folder, and `>> cron.log 2>&1` saves both the output and any errors to a log file so I can check if it ran.
 
 To test it, I first set it to run every minute (`* * * * *`). After I saw it running in `cron.log`, I changed it to every hour.
+
 **ScreenShot of the output:**
 ![cron running](screenshots/cron.png)
 
